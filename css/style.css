@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    background-image: url(../img/sfondo.jpeg);
+    background-repeat: no-repeat;
+    background-size:100%;
+}
+
+.my-bg-white{
+    background-color: rgba(255, 255, 255, 0.719);
+    box-shadow:1px 1px 30px #fff;
+    border-radius: 30px;
+}
+
+#input-container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#numbers {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#number-input {
+    font-size: 18px;
+    padding: 5px;
+    margin: 10px;
+
+}
+
+#submit-button {
+    cursor: pointer;
+}
+
+#result {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.orologio{
+    width: 200px;
+    height: 200px;
+    background-image: url(../img/orologio-senzalancette.jpg);
+    background-size: cover;
+    border: 3px solid black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+}
+.debug{
+    border: 3px solid blue;
+}
+.lancetta{
+    width: 100%;
+    height: 3px; 
+    animation: spin 35s;
+}
+
+.lancettina{
+    height: 2px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 10%, rgb(0, 0, 0) 20%);
+}
+
+@keyframes spin {
+    0%{transform:rotate(90deg);}
+    100%{transform:rotate(270deg);}
+
+}
